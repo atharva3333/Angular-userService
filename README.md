@@ -27,6 +27,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 
 
+
+![1a](https://github.com/user-attachments/assets/b3c290c9-53f0-4ae5-b5b7-f9855e0200b9)
+![2a](https://github.com/user-attachments/assets/f5c0ce23-e3df-471e-a7f5-1835b6e36ad4)
+![3a](https://github.com/user-attachments/assets/786ad45d-4ca6-4dd9-8e18-0c95dae119d5)
+![4a](https://github.com/user-attachments/assets/1dd21b8b-2e9c-4eed-bdf5-253c5e55e5a3)
+![5a](https://github.com/user-attachments/assets/c053da29-1d8d-45ce-be28-ce6ac24a1039)
+![6a](https://github.com/user-attachments/assets/3a1832b5-65c9-41bf-ae19-d092043be47a)
+
+
+
+
+
+
 ## User Flow
 
 1. **Initial Screen: Email or Phone Input**

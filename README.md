@@ -17,6 +17,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Mock User Details
+
+`name: 'Ramesh', email: 'user1@example.com', password: 'password1', phoneNumber: '1234567890'`
+
+## Organisation Details
+
+`id: 'ORG123', name: 'OrgTech'`
+
+
 
 ## User Flow
 

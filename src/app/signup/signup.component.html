@@ -1,0 +1,90 @@
+<div class="signup-container">
+    <!-- Show success message only if signup is successful -->
+    <div *ngIf="showSuccessMessage; else signupForm" class="success-message">
+        <img src="assets/Green-tick.svg" alt="Success" class="success-img">
+        <h2>Welcome to Solvei8!</h2>
+        <p class="user-msg">Redirecting you to the Login screen. This might take a few seconds...</p>
+    </div>
+
+    <!-- Template for the signup form -->
+    <ng-template #signupForm>
+        <!-- Hide the create account header and progress bars when success message is shown -->
+        <div *ngIf="!showSuccessMessage">
+            <h1 [ngStyle]="{'margin-bottom': step === 2 ? '0' : '15px'}">Create account</h1>
+            <div class="progress-bar" [ngStyle]="{'margin-bottom': step === 1 ? '20px' : '0'}">
+                <div class="bar step1" [ngClass]="{ 'active': step >= 1 }"></div>
+                <div class="bar step2" [ngClass]="{ 'active': step >= 2 }"></div>
+            </div>
+
+
+            <!-- Step 1 Form -->
+            <div *ngIf="step === 1" class="form-container">
+                <form [formGroup]="step1Form" (ngSubmit)="onSubmitStep1()">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" formControlName="email" type="text" class="form-control"
+                            placeholder="Loremipsum@gmail.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" formControlName="name" type="text" class="form-control"
+                            placeholder="Full name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="createPassword">Create Password</label>
+                        <input id="createPassword" formControlName="createPassword" type="password" class="form-control"
+                            placeholder="password" />
+                    </div>
+                    <button type="submit" class="btn">Next</button>
+                </form>
+            </div>
+
+            <!-- Step 2 Form -->
+            <div *ngIf="step === 2" class="form-container">
+                <button type="button" class="back-btn" (click)="goToStep(1)">
+                    <img src="assets/arrow-back.svg" alt="Back button">
+                    Go Back
+                </button>
+                <form [formGroup]="step2Form" (ngSubmit)="onSubmitStep2()">
+                    <div class="form-group">
+                        <label for="organizationName">Organization Name</label>
+                        <input id="organizationName" formControlName="organizationName" type="text" class="form-control"
+                            placeholder="Enter your organization name" />
+                        <div *ngIf="organizationError" class="error-message">{{ organizationError }}</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="organizationId">Organization ID</label>
+                        <input id="organizationId" formControlName="organizationId" type="text" class="form-control"
+                            placeholder="Enter your organization ID" />
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation</label>
+                        <select id="designation" formControlName="designation" class="form-control">
+                            <option value="">Select your designation</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Designer">Designer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Birth Date</label>
+                        <input id="birthDate" formControlName="birthDate" type="date" class="form-control" />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group-1">
+                            <label for="city">City</label>
+                            <input id="city" formControlName="city" type="text" class="form-control"
+                                placeholder="Enter your city" />
+                        </div>
+                        <div class="form-group-1">
+                            <label for="pincode">Pincode</label>
+                            <input id="pincode" formControlName="pincode" type="text" class="form-control"
+                                placeholder="Enter your pincode" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </ng-template>
+</div>

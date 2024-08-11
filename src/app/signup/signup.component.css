@@ -1,0 +1,132 @@
+
+.signup-container {
+    width: 500px;
+  }
+
+  .back-btn {
+    position: relative;
+    top: -65px;
+    left: -80px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #0069D1;
+    cursor: pointer;
+  }
+
+.progress-bar {
+    display: flex;
+    gap:10px;
+  }
+  
+  .bar {
+    width: 190px;
+    height: 8px;
+    border-radius: 16px;
+    background-color: grey;
+  }
+  
+  .bar.step1.active,
+  .bar.step2.active {
+      background-color: #0069D1;
+  }
+  
+  .text-color {
+    color: #0069D1;
+  }
+  
+  .font-600 {
+    font-weight: 600;
+  }
+  
+  .form-group label {
+    color: #0069D1;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .form-group input,select {
+    background-color: #E4ECEE;
+    color: #767676;
+    border: none;
+    padding: 15px;
+    width: 400px;
+    border-radius: 24px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .form-group-1 label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+
+  .form-group-1 input {
+    background-color: #E4ECEE;
+    color: #767676;
+    border: none;
+    padding: 15px;
+    border-radius: 24px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 195px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .form-row .form-group:first-child {
+    margin-right: 10px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    width: 400px;
+    border-radius: 24px;
+    color: white;
+    background-color: #0069D1;
+    font-weight: 600;
+  }
+  
+  .user-msg{
+    color: #737E8A !;
+    font-size: 20px !important;
+
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .success-icon {
+    width: 40px;
+    height: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .success-message p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .error-message {
+    color: #dc3545; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: 10px;
+  }

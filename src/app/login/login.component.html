@@ -1,0 +1,45 @@
+<div class="login-container">
+    <!-- Show success message only if login is successful -->
+    <div *ngIf="showSuccessMessage; else loginForm" class="success-message">
+        <img src="assets/Green-tick.svg" alt="Success" class="success-img">
+      <h2>Logging you in....</h2>
+      <p>Kindly wait as we are curating the data accordingly.</p>
+    </div>
+  
+    <!-- Template for the login form -->
+    <ng-template #loginForm>
+      <h1>Welcome, {{ userName }}!</h1>
+      
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="email" class="text-color font-600">Enter Email ID</label>
+          <input 
+            id="email" 
+            name="email" 
+            type="text" 
+            class="form-control font-600" 
+            placeholder="Enter your email"
+            [(ngModel)]="email"
+          />
+  
+          <label for="password" class="text-color font-600">Password</label>
+          <input 
+            id="password" 
+            name="password" 
+            type="password" 
+            class="form-control font-600" 
+            placeholder="Enter your password"
+            [(ngModel)]="password"
+          />
+          
+          <!-- Error message for incorrect password -->
+          <div *ngIf="showErrorMessage" class="error-message">
+            Incorrect password. Please try again.
+          </div>
+        </div>
+  
+        <button type="submit" class="btn font-600">Login</button>
+      </form>
+    </ng-template>
+  </div>
+  

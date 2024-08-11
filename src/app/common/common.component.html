@@ -1,0 +1,33 @@
+<div class="common-container">
+  <div class="common-form">
+    <h1>Welcome</h1>
+    
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email" class="text-color font-600">Enter Email ID</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="text" 
+          class="form-control font-600" 
+          placeholder="Enter your email"
+          [(ngModel)]="email"
+        />
+
+        <p>(OR)</p>
+
+        <label for="phoneNumber" class="text-color font-600">Phone Number</label>
+        <input 
+          id="phoneNumber" 
+          name="phoneNumber" 
+          type="text" 
+          class="form-control font-600" 
+          placeholder="+91"
+          [(ngModel)]="phoneNumber"
+        />
+      </div>
+
+      <button type="submit" class="btn font-600">Next</button>
+    </form>
+  </div>
+</div>

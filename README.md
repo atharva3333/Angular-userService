@@ -27,15 +27,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 
 
-
-![1a](https://github.com/user-attachments/assets/b3c290c9-53f0-4ae5-b5b7-f9855e0200b9)
-![2a](https://github.com/user-attachments/assets/f5c0ce23-e3df-471e-a7f5-1835b6e36ad4)
-![3a](https://github.com/user-attachments/assets/786ad45d-4ca6-4dd9-8e18-0c95dae119d5)
-![4a](https://github.com/user-attachments/assets/1dd21b8b-2e9c-4eed-bdf5-253c5e55e5a3)
-![5a](https://github.com/user-attachments/assets/c053da29-1d8d-45ce-be28-ce6ac24a1039)
-![6a](https://github.com/user-attachments/assets/3a1832b5-65c9-41bf-ae19-d092043be47a)
-
-
+![1](https://github.com/user-attachments/assets/fa99e835-ea40-4b8e-ba89-a08488065b6e)
+![2](https://github.com/user-attachments/assets/4f7adf6a-b8b4-464a-a01d-88c04af20dc1)
+![3](https://github.com/user-attachments/assets/8cee7e1c-3140-4de8-910f-975e6ab225c9)
+![4](https://github.com/user-attachments/assets/b01b7487-9e05-4ff1-acdc-b1937fd2bae6)
+![5](https://github.com/user-attachments/assets/917be5c4-0ce1-488e-95d7-0cd8bffdea99)
+![6](https://github.com/user-attachments/assets/3c1ffa26-12b8-4cef-930e-574f09434492)
+![7](https://github.com/user-attachments/assets/62fa3d97-dd2d-452b-9c6e-5a540f676364)
 
 
 
